@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="logi.css">
+    <title>Login Page</title>
+</head>
+<script>
+   function valid() {
+    let email = document.getElementById('1').value;
+    let password = document.getElementById('2').value;
+
+    if (email == "" || password == "") {
+        alert("Username and Password required");
+    } 
+    else if (email == "nist@gmail.com" && password == "123") {
+        alert("Login Successful");
+        window.location.href = "hostel.php"; 
+    }
+    else{
+        alert("Incorrect Username or Password");
+    }
+}
+</script>
+<body>
+    <h1 style="color: rgb(127, 255, 212); text-align: center;"> Enter your Credentials to access the hostel management system</h1><br><br>
+    <div class="form">
+    <form action="" name="login" class="container">
+    Username:
+    <input type="text" placeholder="name@domain.com" id="1" name="email"><br><br>
+    Password:
+    <input type="password" id="2" name="password"><br><br>
+    <input type="button" onclick="valid()" value="Login">
+    </form>
+</div>
+</body>
+</html>

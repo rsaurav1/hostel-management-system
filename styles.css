@@ -1,0 +1,30 @@
+
+body{
+    background-color: lightgreen;
+    background-blend-mode:darken;
+    background-image: url(nepal.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+h1{
+    text-align: center;
+    color: rgb(127, 255, 212);
+}
+.navbar{
+    background-color:  rgb(77, 74, 74);
+    display: flex;
+    color:white;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+a{
+    color:white;
+    text-decoration: none;
+    font-size: large;   
+    display: flex; 
+}
+a:hover{
+    background-color:gray;
+     transition: all 0.5s ease;
+}
